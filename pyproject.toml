@@ -1,5 +1,5 @@
 [project]
-name = "numerical-foundations"
+name = "Core-ML-algorithms-from-first-principles"
 version = "0.1.0"
 description = "Core ML algorithms from first principles, verified against reference implementations"
 requires-python = ">=3.11"
