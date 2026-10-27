@@ -1,6 +1,6 @@
 # Numerical foundations
 
-![tests](https://github.com/amrxshariff/numerical-foundations/actions/workflows/tests.yml/badge.svg)
+![tests](https://github.com/amrxshariff/Core-ML-algorithms-from-first-principles/actions/workflows/tests.yml/badge.svg)
 
 Core machine learning algorithms implemented from first principles in NumPy, each
 verified against a reference implementation and accompanied by one measured finding.
