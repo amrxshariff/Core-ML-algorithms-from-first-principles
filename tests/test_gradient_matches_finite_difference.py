@@ -1,8 +1,8 @@
 import numpy as np
 
-from src.optimisation.descent import gradient_descent
-from src.optimisation.quadratic import quadratic, quadratic_grad
-from src.optimisation.rosenbrock import rosenbrock, rosenbrock_grad
+from optimisation.quadratic import quadratic, quadratic_grad
+from optimisation.rosenbrock import rosenbrock, rosenbrock_grad
+
 
 def test_gradient_matches_finite_difference():
     """

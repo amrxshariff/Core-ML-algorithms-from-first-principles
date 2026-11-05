@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def quadratic(x):
     """
     f(x) = 10*x[0]^2 + 5*x[1]^2

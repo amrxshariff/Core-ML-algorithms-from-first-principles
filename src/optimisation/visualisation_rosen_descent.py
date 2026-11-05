@@ -1,7 +1,9 @@
-import numpy as np
 import matplotlib.pyplot as plt
-from src.optimisation.descent import gradient_descent
-from src.optimisation.rosenbrock import rosenbrock, rosenbrock_grad
+import numpy as np
+
+from optimisation.descent import gradient_descent
+from optimisation.rosenbrock import rosenbrock, rosenbrock_grad
+
 
 def visualisation_descent():
     """
@@ -14,7 +16,7 @@ def visualisation_descent():
     X, Y = np.meshgrid(x0, x1)
     z = rosenbrock([X, Y])
 
-    x_final, history, n_iter = gradient_descent(rosenbrock, rosenbrock_grad, x0 = [0.5, 0.5], lr = 0.01, n_iter = 100)
+    _, history, _ = gradient_descent(rosenbrock, rosenbrock_grad, x0 = [0.5, 0.5], lr = 0.01, n_iter = 100)
 
     history = np.array(history)
     x_vals = history[:,0]

@@ -1,8 +1,8 @@
 import numpy as np
 
-from src.optimisation.descent import gradient_descent
-from src.optimisation.quadratic import quadratic, quadratic_grad
-from src.optimisation.rosenbrock import rosenbrock, rosenbrock_grad
+from optimisation.descent import gradient_descent
+from optimisation.quadratic import quadratic, quadratic_grad
+
 
 def test_divergence_above_threshold():
     """

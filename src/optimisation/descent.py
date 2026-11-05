@@ -1,6 +1,5 @@
 import numpy as np
 
-from optimisation import quadratic
 from optimisation.rosenbrock import rosenbrock, rosenbrock_grad
 
 

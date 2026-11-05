@@ -1,8 +1,9 @@
-import numpy as np
 import matplotlib.pyplot as plt
-from src.optimisation.descent import gradient_descent
-from src.optimisation.quadratic import quadratic, quadratic_grad
-from src.optimisation.rosenbrock import rosenbrock, rosenbrock_grad
+import numpy as np
+
+from optimisation.descent import gradient_descent
+from optimisation.quadratic import quadratic, quadratic_grad
+
 
 def loss_trajectories():
     """
