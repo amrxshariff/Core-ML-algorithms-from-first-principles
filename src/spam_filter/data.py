@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 import io
-from pathlib import Path
 import urllib.request
 import zipfile
+from pathlib import Path
 
 UCI_SMS_SPAM_ZIP_URL = "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip"
 DEFAULT_DATA_DIR = Path("data")
