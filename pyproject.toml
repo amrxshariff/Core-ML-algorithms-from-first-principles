@@ -22,6 +22,8 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = "--strict-markers"
+markers = ["network: hits UCI servers; deselected in CI"]
 
 [tool.ruff]
 line-length = 100

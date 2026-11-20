@@ -15,4 +15,4 @@ jobs:
           cache: pip
       - run: pip install -e ".[dev]"
       - run: ruff check .
-      - run: pytest -v
+      - run: pytest -v -m "not network"
