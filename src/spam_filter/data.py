@@ -65,3 +65,8 @@ def load_sms_spam(
             labels.append(label_clean)
 
     return texts, labels
+
+if __name__ == "__main__":
+    texts, labels = load_sms_spam()
+    spam_count = sum(1 for label in labels if label == 1)
+    print(f"Loaded {len(texts)} messages ({spam_count} spam, {len(texts) - spam_count} ham).")
