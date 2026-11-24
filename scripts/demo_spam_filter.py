@@ -1,12 +1,11 @@
 """Demo on a synthetic dataset with ~13% positive class."""
 import numpy as np
-from sklearn.datasets import make_classification
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
 
+from spam_filter.class_balance import check_against_sklearn, report
 from spam_filter.data import load_sms_spam
-from spam_filter.class_balance import report, check_against_sklearn
 
 X, y = load_sms_spam()   
 y = np.asarray(y)

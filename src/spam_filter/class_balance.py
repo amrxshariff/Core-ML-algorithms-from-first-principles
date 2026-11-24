@@ -11,7 +11,6 @@ import pandas as pd
 from sklearn.metrics import confusion_matrix, precision_recall_fscore_support
 
 
-
 def class_balance(y, class_names=None):
     """Step 1 — counts and proportions per class.
 
